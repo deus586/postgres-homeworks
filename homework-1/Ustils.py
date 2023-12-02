@@ -1,5 +1,6 @@
 import csv
 import psycopg2
+import os
 
 
 def writer(path, create_table):
@@ -10,7 +11,7 @@ def writer(path, create_table):
         host='localhost',
         database='north',
         user='postgres',
-        password='ShAmAn5861'
+        password=os.getenv('PASSWORD')
     )
     try:
         with conn:
