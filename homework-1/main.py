@@ -1,5 +1,5 @@
 """Скрипт для заполнения данными таблиц в БД Postgres."""
-from Ustils import writer
+from Utils import writer
 
 
 # Список скриптов для динамического создания таблиц
